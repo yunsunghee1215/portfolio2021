@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+body{font-size: 1.4rem;}
+#wrap{min-width: 320px;}
+
+
+/* main */
+
+#main{width: 100%; height: 100vh; 
+      position: relative;
+      background-color: #FFC754;
+      color: #fff;
+      overflow: hidden;
+     }
+
+#main > .inner > a{display: block; padding: 30px 30px 0 0;}
+#main .portfolio{font-size: 1.1rem; 
+                 text-transform: uppercase;
+                 font-style: italic; font-weight: 200;
+                 font-family: 'Roboto', sans-serif;
+                 color: #fff;
+                 text-align: right;
+                }
+#main .portfolio span{font-weight: 400;}
+
+#main .txt_box{width: 322px; 
+               position: absolute; top: 30%; left: 50%; transform: translateX(-50%);
+               line-height: 1.3; text-align: center;
+              }
+#main .txt_box p.graphic_ko{font-size: 2rem;
+                            font-weight: 400;
+                            font-family: NanumSquare;
+                           }
+#main .txt_box p.graphic_en{font-size: 5rem;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 200;
+                           }
+#main .txt_box p.graphic_en span{font-weight: 600;}
+
+#main .simbol{width: 330px; height: 280px;
+              background: url(../img/m_simbol_yun_line.svg) no-repeat center / contain;
+              font-size: 1.2rem;
+              font-family: 'Roboto', sans-serif;
+              color: #fff;
+              position: absolute;
+             }
+#main .simbol p{position: absolute}
+
+#main div.yun{top: -130px; left: -120px;}
+#main div.yun p{bottom: 35px; right: 85px;}
+
+#main div.sung{bottom: -20px; left: -100px;
+               background-image: url(../img/simbol_sung_wh.svg);
+              }
+#main div.sung p{top: 70px; left: 50%; transform: translateX(-50%);
+                 font-size: 2.1rem; font-weight: 600;
+                 color: #FFC754;
+                 text-align: center;
+                }
+#main div.sung p span{font-size: 1.2rem; font-weight: 400;
+                      font-family: NanumSquare;
+                     }
+#main div.hee{bottom: 13%; right: -170px;
+              background-image: url(../img/m_simbol_hee_line.svg);
+             }
+#main div.hee p{top: 125px; left: 30px;}
+
+
+
+/* header */
+
+/* common.css에 공통 적용 */
+
+header{border-bottom: 1px solid rgba(255, 199, 84, 0.5);}
+header h1 a p.portfolio{color: #FFC754;}
+
+
+
+/* #container */
+
+#container{padding: 40px 30px 30px;}
+#container .txt_box{text-align: center;}
+#container .txt_box .title h2{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+      font-style: italic;
+     }
+#container .txt_box .title p::before{
+      display: block; content: '';
+      height: 15px;
+      background: url(../img/simbol_ysh.svg) no-repeat center / contain;
+      margin: 10px 0;
+     }
+#container .txt_box .title p{
+      font-size: 1.6rem;
+     }
+#container .txt_box h3{
+      font-size: 3.2rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+      font-style: italic;
+     }
+#container .sub{margin-top: 50px;}
+#container .sub h3{margin: 30px 0 10px;}
+#container .sub h3.yun,
+#container .sub .yun strong{color: #007FBF;}
+#container .sub h3.sung,
+#container .sub .sung strong{color: #FFC754;}
+#container .sub h3.hee,
+#container .sub .hee strong{color: #00745E;}
+#container .sub_txt h4{
+      font-weight: 400;
+      margin-bottom: 10px;
+     }
+#container .sub_txt p{
+      font-size: 1rem;
+     }
+#container .inner .img_box{
+      width: 100%; height: 700px;
+      background: url(../img/tomorrow_m.svg) no-repeat center top / contain;
+      margin-top: 50px;
+}
+
+
+
+@media (min-width: 768px){
+
+/* main */
+
+
+#main > .inner > a{display: block; padding: 50px 50px 0 0;}
+#main .portfolio{font-size: 1.4rem;}
+#main .portfolio br{display: none;}
+
+#main .txt_box{width: 515px;}
+#main .txt_box p.graphic_ko{font-size: 2.8rem;}
+#main .txt_box p.graphic_en{font-size: 8rem;}
+/* #main .txt_box p.graphic_en span{font-weight: 600;} */
+
+#main .simbol{width: 500px; height: 400px;
+              background: url(../img/t_simbol_yun_line.svg) no-repeat center / contain;
+              font-size: 1.6rem;
+             }
+
+#main div.yun{top: -170px; left: -150px;}
+#main div.yun p{bottom: 55px; right: 125px;}
+
+#main div.sung{bottom: 0px; left: -150px;
+               background-image: url(../img/simbol_sung_wh.svg);
+              }
+#main div.sung p{top: 70px; 
+                 font-size: 2.4rem; 
+                }
+#main div.sung p span{font-size: 1.4rem;}
+#main div.hee{bottom: 120px; right: -210px;
+              background-image: url(../img/t_simbol_hee_line.svg);
+             }
+#main div.hee p{top: 180px; left: 50px;}
+
+
+
+
+/* #container */
+
+
+#container{padding: 70px 50px 30px;}
+#container .txt_box .title h2{
+      font-size: 4.5rem;
+     }
+#container .txt_box .title p::before{
+      height: 20px;
+      margin: 30px 0;
+     }
+#container .txt_box .title p{
+      font-size: 2.8rem;
+     }
+#container .txt_box h3{
+      font-size: 7rem;
+     }
+#container .sub{margin-top: 100px;}
+#container .sub h3{margin: 50px 0 25px;}
+#container .sub_txt h4{
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+     }
+#container .sub_txt p{
+      font-size: 1.8rem;
+     }
+#container .inner .img_box{
+      width: 100%; height: 1300px;
+      background: url(../img/tomorrow.svg) no-repeat center top / contain;
+      margin-top: 100px;
+}
+
+
+}
+
+
+
+@media (min-width: 1100px){
+
+/* main */
+
+
+#main .portfolio{font-size: 2rem;}
+#main .inner{width: 1100px;  height: 100%; 
+             margin: 0 auto;
+             position: relative;
+            }
+#main .portfolio br{display: none;}
+
+#main .txt_box{width: 1100px;}
+#main .txt_box p.graphic_ko{font-size: 3.6rem;}
+#main .txt_box p.graphic_en{font-size: 11rem;}
+
+#main .simbol{width: 700px; height: 500px;
+              background: url(../img/simbol_yun_line.svg) no-repeat center / contain;
+              font-size: 2rem;
+             }
+
+#main div.yun{top: -160px; left: -400px;}
+#main div.yun p{bottom: 80px; right: 190px;}
+
+#main div.sung{bottom: -30px; left: -40px;
+               background-image: url(../img/simbol_sung_wh.svg);
+              }
+#main div.sung p{top: 100px; 
+                 font-size: 3.6rem; 
+                }
+#main div.sung p span{font-size: 2rem;}
+#main div.hee{bottom: 220px; right: -620px;
+              height: 570px;
+              background-image: url(../img/simbol_hee_line.svg);
+             }
+#main div.hee p{top: 265px; left: 70px;}
+
+
+
+/* #container */
+
+#container{padding: 120px 0 30px;}
+#container .inner{width: 1100px;
+                  margin: 0 auto;
+                  position: relative;
+                 }
+
+#container .txt_box .title h2{
+      font-size: 5.5rem;
+     }
+#container .txt_box .title p::before{
+      height: 25px;
+      margin: 40px 0;
+     }
+#container .txt_box .title p{
+      font-size: 3.6rem;
+     }
+#container .txt_box h3{
+      font-size: 8rem;
+     }
+#container .sub{margin-top: 120px;}
+#container .sub h3{margin: 100px 0 40px;}
+#container .sub_txt h4{
+      font-size: 2.8rem;
+     }
+#container .sub_txt p{
+      font-size: 2.1rem;
+     }
+#container .inner .img_box{
+      width: 100%; height: 1600px;
+      margin-top: 200px;
+}
+
+
+
+}

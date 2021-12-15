@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUN SUNG HEE PORTFOLIO</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="css/import_yesterday.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <SCript src="jr/html5shiv.min.js"></SCript>
+  <![endif]-->
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      /* 
+      #container 영역부터 header영역 top .fixed
+      */
+      $(document).scroll(function(){
+
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos)
+        var header = $("#container").offset().top;
+        console.log(header)
+
+
+        if(scrollPos > header){
+          $("header").addClass("fixed");
+          }
+        if(scrollPos <= header){
+          $("header").removeClass("fixed");
+          }
+      });
+
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <div id="main">
+      <div class="inner">
+
+        <a href="index.html">
+          <p class="portfolio"><span>yun sung hee</span><br> portfolio</p>
+        </a>
+        <div class="txt_box">
+          <p class="graphic_ko">편집디자이너</p>
+          <p class="graphic_en">Graphic design</p>
+        </div>
+        <!--//.txt_box-->
+        <a href="main_yesterday.html">
+          <div class="simbol yun">
+            <p>Yesterday<br><span>어제의 나</span></p>
+          </div>
+          <!--//.simbol .yun-->
+        </a>
+
+        <a href="main_today.html">
+          <div class="simbol sung">
+            <p>Today</p>
+          </div>
+          <!--//.simbol .sung-->
+        </a>
+
+        <a href="main_tomorrow.html">
+          <div class="simbol hee">
+            <p>Tomorrow</p>
+          </div>
+          <!--//.simbol .hee-->
+        </a>
+
+      </div>
+      <!--//.inner-->
+    </div>
+    <!--//#main-->
+
+    <header>
+      <div class="inner">
+
+        <nav>
+          <ul>
+            <li class="yesterday hidden">
+              <a href="main_yesterday.html">Yesterday</a>
+            </li>
+            <li class="today hidden">
+              <a href="main_today.html">Today</a>
+            </li>
+            <li class="tomorrow hidden">
+              <a href="main_tomorrow.html">Tomorrow</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>
+          <a href="index.html">
+            <p class="portfolio">
+              <span>yun sung hee</span> portfolio
+            </p>
+          </a>
+        </h1>
+        
+      </div>
+      <!--//.inner-->
+    </header>
+
+    <div id="container">
+      <div class="inner">
+
+        <h2>Portfolio</h2>
+
+        <div class="contents">
+          <ul>
+            <li class="hospital">
+              <div class="txt_box">
+                <strong>세리윤 <span>2014~2021</span><br>현대출판 <span>2012~2014</span> / 부산기획 <span>2010~2012</span></strong>
+                <h3>#부산지역 종합병원</h3>
+                <p class="mobile">
+                  부산대학교병원, 동아대학교병원, 인제대학교병원, <br>
+                  고신대학교복음병원, 동남권원자력의학원의 기념 연보 제작 및 <br>
+                  각 과별 사업 홍보물 디자인 담당
+                </p>
+                <p class="pc">
+                  부산대학교병원, 동아대학교병원, 인제대학교병원, 고신대학교복음병원, <br>
+                  동남권원자력의학원의 기념 연보 제작 및 각 과별 사업 홍보물 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_hospital.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li> <!--//부산지역 종합병원-->
+            <li class="simposium">
+              <div class="txt_box">
+                <strong>세리윤 <span>2014~2021</span></strong>
+                <h3>#의료학회 학술대회</h3>
+                <p class="mobile">
+                  JCR, BAPS, 대한소화기학회 부울경지회, CHEMP, <br>
+                  대한생물치료정신의학회, 부산가정의학회 외 다수의 의료학회 <br>
+                  심포지엄 및 세미나 개최 시 필요한 홍보물 디자인 담당
+                </p>
+                <p class="pc">
+                  JCR(동맥경화 및 중재시술국제학회), BAPS(부산성형미용학회), <br>
+                  대한소화기학회 부울경지회, 대한생물치료정신의학회, 부산가정의학회, <br>
+                  CHEMP(부울경 대사통합의학회) 외 다수의 의료학회 심포지엄 및 <br>
+                  세미나 개최 시 필요한 홍보물 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_simposium.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li> <!--//의료학회 학술대회-->
+            <li class="books">
+              <div class="txt_box">
+                <strong>세리윤 <span>2014~2021</span></strong>
+                <h3>#출판 서적</h3>
+                <p class="mobile">
+                  부산지역 수필동인들의 수필모음집 ‘에세피아’와 ‘에세이부산’ 및 <br>
+                  문인들의 개인 수필집, 호스피스완화케어센터 사례모음집 등 <br>
+                  다수의 출판 서적 디자인 담당
+                </p>
+                <p class="pc">
+                  부산지역 수필동인들의 수필모음집 ‘에세피아’와 ‘에세이부산’ 및 <br>
+                  문인들의 개인 수필집, 호스피스완화케어센터 사례모음집 등 <br>
+                  다수의 출판 서적 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_books.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li> <!--//출판 서적-->
+            <li class="newsletter">
+              <div class="txt_box">
+                <strong>세리윤 <span>2014~20021</span> / 빛누리기획 <span>2004~2008</span></strong>
+                <h3>#정기 간행물</h3>
+                <p class="mobile">
+                  부산가톨릭대학교 호스피스완화케어센터, 부산대학교병원 <br>
+                  권역호스피스센터, 부산기독교종합사회복지관 등 <br>
+                  다양한 기관의 정기간행 소식지 디자인 담당
+                </p>
+                <p class="pc">
+                  부산가톨릭대학교 호스피스완화케어센터, 부산대학교병원 <br>
+                  권역호스피스센터, 부산기독교종합사회복지관 등 다양한 기관의 <br>
+                  정기간행 소식지 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_newsletter.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li> <!--//정기 간행물-->
+            <!-- <li class="indigo">
+              <div class="txt_box">
+                <strong>빛누리기획 <span>2004~2008</span></strong>
+                <h3>#인디고 서원</h3>
+                <p class="mobile">
+                  청소년 인문학 서점으로 청소년들이 주체가 되어<br>
+                  기획한 잡지 ‘인디고잉’을 비롯해 다양한 청소년 중심의<br>
+                  문화 행사의 홍보물 디자인 담당
+                </p>
+                <p class="pc">
+                  청소년 인문학 서점으로 청소년들이 주체가 되어 기획한 잡지 ‘인디고잉’을 <br>
+                  비롯해 다양한 청소년 중심의 문화 행사의 홍보물 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_indigo.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li>  -->
+            <!--//인디고 서원-->
+            <li class="brochure">
+              <div class="txt_box">
+                <strong>세리윤 <span>2014~2021</span> / 금강그라픽스 <span>2002~2004</span></strong>
+                <h3>#브로슈어</h3>
+                <p class="mobile">
+                  회사에 대한 소개뿐만 아니라 실적 및 특성, 전문분야 등을 <br>
+                  효과적으로 홍보하기 위해 제작되는 브로슈어 디자인 담당
+                </p>
+                <p class="pc">
+                  회사에 대한 소개뿐만 아니라 실적 및 특성, 전문분야 등을 효과적으로 <br>
+                  홍보하기 위해 제작되는 브로슈어 디자인 담당
+                </p>
+              </div>
+              <div class="img_box">
+                <a href="sub_yd_brochure.html">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li> <!--//브로슈어-->
+          </ul>
+        </div>
+        <!--//.contents-->
+        
+      </div>
+      <!--//.inner-->
+    </div>
+    <!--//#container-->
+
+    <footer>
+      <p><span>YUN SUNG HEE </span>PORTFOLIO</p>
+    </footer>
+
+  </div>
+  <!--//#wrap-->
+  
+</body>
+</html>

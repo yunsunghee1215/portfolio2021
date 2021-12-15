@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body{font-size: 1.4rem;}
+#wrap{min-width: 320px;}
+
+
+/* main */
+
+#main{width: 100%; height: 100vh; 
+      position: relative;
+      background: url(../img/visual_sky.jpg) no-repeat center / cover;
+      overflow: hidden;
+     }
+#main .txt_box{width: 100%; position: absolute; top: 27%;
+               line-height: 1.1;
+               text-align: center; color: #fff;
+              }
+#main .txt_box p.portfolio{font-size: 2.8rem; text-transform: uppercase;
+                           font-style: italic; font-weight: 200;
+                           font-family: 'Roboto', sans-serif;
+                           margin-bottom: 30px;
+                          }
+#main .txt_box p span{font-weight: 400;}
+#main .txt_box p.title_en{font-size: 1.8rem;
+                          font-style: italic; 
+                          font-family: 'Roboto', sans-serif;
+                          margin-bottom: 20px;
+                         }
+#main .txt_box p.title_ko{font-size: 1.5rem;
+                          font-family: 'Noto Serif KR', serif;
+                          }
+
+#main .simbol{position: absolute; transition: all 0.3s;}
+#main .simbol a{display: block; width: 330px; height: 280px;
+                background: url(../img/m_simbol_yun_line.svg) no-repeat center / contain;
+                font-size: 1.2rem;
+                font-family: 'Roboto', sans-serif;
+                color: #fff;
+                position: relative;
+                transition: all 1s;
+               }
+#main .simbol a p{position: absolute;}
+
+#main div.yun{top: -130px; left: -120px; 
+              transition: all 1s;
+             }
+#main div.yun a p{bottom: 35px; right: 85px;}
+#main div.yun:hover a{background-image: url(../img/simbol_yun.svg);}
+#main div.yun:hover{top: -120px; left: -110px;}
+
+#main div.sung{bottom: -1px; left: -120px;
+               transition: all 1s;
+              }
+#main div.sung a{height: 230px; 
+                 background-image: url(../img/m_simbol_sung_line.svg);}
+#main div.sung a p{top: 50px; left: 50%; transform: translateX(-50%);}
+#main div.sung:hover{bottom: 0;left: -110px;}
+#main div.sung:hover a{height: 250px;
+                       background-image: url(../img/simbol_sung.svg);}
+
+#main div.hee{bottom: 10%; right: -170px;
+              transition: all 1s;
+             }
+#main div.hee a{background-image: url(../img/m_simbol_hee_line.svg);}
+#main div.hee a p{top: 125px; left: 30px;}
+#main div.hee:hover a{background-image: url(../img/simbol_hee.svg);}
+#main div.hee:hover{bottom: 10%; right: -160px;}
+
+
+
+
+
+@media (min-width: 768px){
+
+/* main */
+
+#main .txt_box p.portfolio{font-size: 4.5rem; 
+                           margin-bottom: 50px;
+                          }
+#main .txt_box p.title_en{font-size: 2.8rem;
+                          margin-bottom: 30px;
+                         }
+#main .txt_box p.title_ko{font-size: 2rem;}
+
+#main .simbol a{width: 500px; height: 400px;
+                background: url(../img/t_simbol_yun_line.svg) no-repeat center / contain;
+                font-size: 1.6rem;
+               }
+
+#main div.yun{top: -170px; left: -150px;}
+#main div.yun a p{bottom: 55px; right: 125px;}
+#main div.yun:hover{top: -155px; left: -135px;}
+
+#main div.sung{bottom: -1px; left: -150px;}
+#main div.sung a{height: 400px; 
+                 background-image: url(../img/t_simbol_sung_line.svg);}
+#main div.sung a p{top: 60px;}
+#main div.sung:hover{bottom: -1px; left: -140px;}
+#main div.sung:hover a{height: 430px;}
+
+#main div.hee{bottom: 80px; right: -210px;}
+#main .simbol a.hee{background-image: url(../img/t_simbol_hee_line.svg);}
+#main div.hee a p{top: 180px; left: 50px;}
+#main div.hee:hover{bottom: 90px; right: -200px;}
+
+}
+
+
+
+
+
+
+@media (min-width: 1100px){
+
+/* main */
+#main .inner{width: 1100px; height: 100%; margin: 0 auto; 
+             position: relative;
+            }
+
+#main .txt_box{top: 28%;}
+#main .txt_box p.portfolio{font-size: 2.4rem; 
+                           margin-bottom: 80px;
+                          }
+#main .txt_box p.portfolio br{display: none;}
+#main .txt_box p.title_en{font-size: 4.5rem;
+                          margin-bottom: 50px;
+                         }
+#main .txt_box p.title_ko{font-size: 2.4rem;}
+
+#main .simbol a{width: 700px; height: 500px;
+                background: url(../img/simbol_yun_line.svg) no-repeat center / contain;
+                font-size: 2rem;
+               }
+
+#main div.yun{top: -160px; left: -400px;}
+#main div.yun a p{bottom: 80px; right: 190px;}
+#main div.yun:hover{top: -140px; left: -380px;}
+
+#main div.sung{bottom: -1px; left: -50px;}
+#main div.sung a{height: 430px; 
+                 background-image: url(../img/simbol_sung_line.svg);}
+#main div.sung a p{top: 70px;}
+#main div.sung:hover{bottom: -1px; left: -30px;}
+#main div.sung:hover a{height: 450px;}
+
+#main div.hee a{height: 570px;}
+#main div.hee a{background-image: url(../img/simbol_hee_line.svg);}
+#main div.hee{bottom: 220px; right: -620px;}
+#main div.hee a p{top: 265px; left: 70px;}
+#main div.hee:hover{bottom: 220px; right: -600px;}
+
+
+
+}
+

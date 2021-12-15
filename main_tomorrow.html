@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUN SUNG HEE PORTFOLIO</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="css/import_tomorrow.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <SCript src="jr/html5shiv.min.js"></SCript>
+  <![endif]-->
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      /* 
+      #container 영역부터 header영역 top .fixed
+      */
+      $(document).scroll(function(){
+
+        var scrollPos = $(document).scrollTop();
+        console.log(scrollPos)
+        var header = $("#container").offset().top;
+        console.log(header)
+
+
+        if(scrollPos > header){
+          $("header").addClass("fixed");
+          }
+        if(scrollPos <= header){
+          $("header").removeClass("fixed");
+          }
+      });
+
+
+    $(document).ready(function(){
+      $('.contents li .txt_box > a').fancybox();
+    });
+
+
+    });
+
+  </script>
+
+</head>
+<body>
+  <div id="wrap">
+
+    <div id="main">
+      <div class="inner">
+
+        <a href="index.html">
+          <p class="portfolio"><span>yun sung hee</span><br> portfolio</p>
+        </a>
+        <div class="txt_box">
+          <p class="graphic_ko">웹디자이너</p>
+          <p class="graphic_en">Web design</p>
+        </div>
+        <!--//.txt_box-->
+
+        <a href="main_yesterday.html">
+          <div class="simbol yun">
+            <p>Yesterday</p>
+          </div>
+          <!--//.simbol .yun-->
+        </a>
+
+        <a href="main_today.html">
+          <div class="simbol sung">
+            <p>Today</p>
+          </div>
+          <!--//.simbol .sung-->
+        </a>
+
+        <a href="main_tomorrow.html">
+          <div class="simbol hee">
+            <p><span>내일의 나</span><br>Tomorrow</p>
+          </div>
+          <!--//.simbol .hee-->
+        </a>
+
+      </div>
+      <!--//.inner-->
+    </div>
+    <!--//#main-->
+
+    <header>
+      <div class="inner">
+
+        <nav>
+          <ul>
+            <li class="yesterday hidden">
+              <a href="main_yesterday.html">Yesterday</a>
+            </li>
+            <li class="today hidden">
+              <a href="main_today.html">Today</a>
+            </li>
+            <li class="tomorrow hidden">
+              <a href="main_tomorrow.html">Tomorrow</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>
+          <a href="index.html">
+            <p class="portfolio">
+              <span>yun sung hee</span> portfolio
+            </p>
+          </a>
+        </h1>
+
+      </div>
+      <!--//.inner-->
+    </header>
+
+    <div id="container">
+      <div class="inner">
+
+        <h2>Portfolio</h2>
+
+        <div class="contents">
+          <ul>
+            <li class="medici">
+              <div class="txt_box">
+                <strong>Web Site</strong>
+                <h3>#메디치 헬스케어</h3>
+                <a href="img/style_medici.jpg">스타일 가이드</a>
+              </div>
+              <div class="img_box">
+                <a href="https://yunsunghee1215.github.io/medici/" target="_black">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li>
+            <li class="indigo">
+              <div class="txt_box">
+                <strong>Web App</strong>
+                <h3>#인디고 서원</h3>
+                <a href="img/style_indigoseowon.jpg">스타일 가이드</a>
+              </div>
+              <div class="img_box">
+                <a href="https://yunsunghee1215.github.io/indigoseowon/" target="_black">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li>
+            <li class="chemp">
+              <div class="txt_box">
+                <strong>Responsive Web</strong>
+                <h3>#챔프</h3>
+                <a href="#">스타일 가이드</a>
+              </div>
+              <div class="img_box">
+                <a href="https://yunsunghee1215.github.io/chemp/" target="_black">
+                  <div class="img"></div>
+                  <div class="dark">자세히 보기</div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--//.contents-->
+        
+      </div>
+      <!--//.inner-->
+    </div>
+    <!--//#container-->
+
+    <footer>
+      <p><span>YUN SUNG HEE </span>PORTFOLIO</p>
+    </footer>
+
+
+  </div>
+  <!--//#wrap-->
+  
+</body>
+</html>

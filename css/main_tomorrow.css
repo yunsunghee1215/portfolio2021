@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+body{font-size: 1.4rem;}
+#wrap{min-width: 320px;}
+
+
+/* main */
+
+#main{width: 100%; height: 100vh; 
+      position: relative;
+      background-color: #00745E;
+      color: #fff;
+      overflow: hidden;
+     }
+
+#main > .inner > a{display: block; padding: 30px 30px 0 0;}
+#main .portfolio{font-size: 1.1rem; 
+                 text-transform: uppercase;
+                 font-style: italic; font-weight: 200;
+                 font-family: 'Roboto', sans-serif;
+                 color: #fff;
+                 text-align: right;
+                }
+#main .portfolio span{font-weight: 400;}
+
+#main .txt_box{width: 322px; 
+               position: absolute; top: 30%; left: 50%; transform: translateX(-50%);
+               line-height: 1.3; text-align: center;
+              }
+#main .txt_box p.graphic_ko{font-size: 2rem;
+                            font-weight: 400;
+                            font-family: NanumSquare;
+                           }
+#main .txt_box p.graphic_en{font-size: 5rem;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 200;
+                           }
+
+#main .simbol{width: 330px; height: 280px;
+              background: url(../img/m_simbol_yun_line.svg) no-repeat center / contain;
+              font-size: 1.2rem;
+              font-family: 'Roboto', sans-serif;
+              color: #fff;
+              position: absolute;
+             }
+#main .simbol p{position: absolute}
+
+#main div.yun{top: -130px; left: -120px;}
+#main div.yun p{bottom: 35px; right: 85px;}
+
+#main div.sung{background-image: url(../img/m_simbol_sung_line.svg);
+               bottom: -50px; left: -120px;
+              }
+#main div.sung p{top: 50px; left: 50%; transform: translateX(-50%);}
+
+#main div.hee{height: 300px; 
+              bottom: 13%; right: -150px;
+              background-image: url(../img/simbol_hee_wh.svg);
+             }
+#main div.hee p{top: 110px; left: 15px;
+                font-size: 2.1rem; font-weight: 600;
+                color: #00745E;
+                text-align: right;
+               }
+#main div.hee p span{font-size: 1.2rem; font-weight: 400;
+                     font-family: NanumSquare;
+                     }
+
+
+/* header */
+
+/* common.css에 공통 적용 */
+
+header{border-bottom: 1px solid rgba(0, 116, 94, 0.3);}
+header h1 a p.portfolio{color: #00745E;}
+
+
+
+/* #container */
+
+#container{padding: 40px 30px 30px;}
+#container h2{font-size: 4.5rem; font-weight: 200; 
+              font-family: 'Roboto', sans-serif;
+              color: #00745E;
+              text-align: center;
+              margin-bottom: 35px;
+             }
+.contents li{width: 100%; padding-bottom: 100%; 
+             margin-bottom: 10px;
+             position: relative;
+            }
+.contents li .txt_box{width: 100%; height: 100%; 
+                      position: absolute; top: 0; left: 0;
+                      border: 1px solid #00745E;
+                      font-size: 1.7rem;
+                      line-height: 1.5;
+                      text-align: center;
+                      text-transform: uppercase;
+                     }
+.contents li .txt_box > a{display: none;}
+.contents li .txt_box strong{
+      width: 100%; 
+      position: absolute; top: 35%; left: 0;
+      }
+.contents li .txt_box h3{
+      font-size: 3.2rem; 
+      font-weight: 400; 
+      color: #00745E;
+      width: 100%; 
+      position: absolute; top: 50%; left: 0; 
+      transform: translateY(-25%);
+      }
+.contents li .img_box{width: 100%; height: 100%; 
+                      position: absolute; top: 0; left: 0;
+                      opacity: 0;
+                      transition: all 1s;
+                     }
+.contents li .img_box a .img{width: 100%; height: 100%; 
+                             background: #f3f3f3 url(../img/logo_medici.svg) no-repeat center / 60% auto;
+                             transition: all 0.5s;
+                            }
+.contents li.indigo .img_box a .img{background: #f3f3f3 url(../img/logo_indigo.png) no-repeat center / 65% auto;}
+.contents li.chemp .img_box a .img{background: #f3f3f3 url(../img/logo_chemp_basic.svg) no-repeat center / 70% auto;}
+
+.contents li:hover .img_box{opacity: 1;}
+
+.contents li .img_box a .dark{width: 100%; height: 100%; 
+                              background-color: #222;
+                              position: absolute; top: 0; left: 0;
+                              font-size: 3.2rem; color: #fff;
+                              text-align: center; line-height: 315px;
+                              transition: all 1s;
+                              display: none; 
+                             }
+
+
+@media (min-width: 768px){
+
+/* main */
+
+
+#main > .inner > a{display: block; padding: 50px 50px 0 0;}
+#main .portfolio{font-size: 1.4rem;}
+#main .portfolio br{display: none;}
+
+#main .txt_box{width: 515px;}
+#main .txt_box p.graphic_ko{font-size: 2.8rem;}
+#main .txt_box p.graphic_en{font-size: 8rem;}
+
+#main .simbol{width: 500px; height: 400px;
+              background: url(../img/t_simbol_yun_line.svg) no-repeat center / contain;
+              font-size: 1.6rem;
+             }
+
+#main div.yun{top: -170px; left: -150px;}
+#main div.yun p{bottom: 55px; right: 125px;}
+
+#main div.sung{background-image: url(../img/t_simbol_sung_line.svg);
+               bottom: -40px; left: -150px;
+              }
+#main div.sung p{top: 60px;}
+
+#main div.hee{height: 430px; 
+              bottom: 120px; right: -170px;
+              /* background-image: url(../img/simbol_hee_wh.svg); */
+             }
+#main div.hee p{top: 170px; left: 40px;
+                font-size: 2.4rem; 
+               }
+#main div.hee p span{font-size: 1.4rem;}
+
+
+
+/* #container */
+
+#container{padding: 60px 50px 30px;}
+#container h2{font-size: 6rem; 
+              margin-bottom: 50px;
+             }
+.contents ul{display: flex;
+             flex-wrap: wrap;
+             justify-content: space-between;
+            }
+.contents li{width: calc(50% - 10px); padding-bottom: calc(50% - 10px); 
+             margin-bottom: 20px;
+            }
+
+
+}
+
+
+
+@media (min-width: 1100px){
+
+/* main */
+
+
+#main .portfolio{font-size: 2rem;}
+#main .inner{width: 1100px; height: 100%; 
+             margin: 0 auto;
+             position: relative;
+            }
+#main .portfolio br{display: none;}
+
+#main .txt_box{width: 1100px;}
+#main .txt_box p.graphic_ko{font-size: 3.6rem;}
+#main .txt_box p.graphic_en{font-size: 11rem;}
+
+#main .simbol{width: 700px; height: 500px;
+              font-size: 2rem;
+             }
+
+#main div.yun{top: -160px; left: -400px;}
+#main div.yun p{bottom: 80px; right: 190px;}
+
+#main div.sung{bottom: -40px; left: -50px;
+               background-image: url(../img/simbol_sung_line.svg);
+              }
+#main div.sung p{top: 70px;}
+
+#main div.hee{bottom: 220px; right: -600px;
+              height: 570px; 
+              background-image: url(../img/simbol_hee_wh.svg);
+             }
+#main div.hee p{top: 215px; left: 70px;
+                font-size: 3.6rem; 
+               }
+#main div.hee p span{font-size: 2rem;}
+
+
+
+/* #container */
+
+#container{padding: 100px 30px 30px;}
+
+#container .inner{width: 1100px;
+                  margin: 0 auto;
+                  position: relative;
+                 }
+
+#container h2{font-size: 9rem; 
+              margin-bottom: 80px;
+             }
+.contents ul{display: block;}
+.contents li{width: 100%; height: 350px; padding-bottom: 0; 
+             margin: 0 0 100px;
+            }
+.contents li::after{content: ''; display: block;
+                    width: 100%; height: 1px; background-color: #ddd;
+                    position: absolute; bottom: -50px; left: 0;
+                   }
+.contents li .txt_box{width: 600px; height: 350px;
+                      position: absolute; top: 0; left: 0;
+                      border: none;
+                      font-size: 3rem;
+                      text-align: left;
+                      padding-top: 50px;
+                     }
+.contents li .txt_box strong{position: static;}
+.contents li .txt_box h3{font-size: 6rem; 
+                         width: 100%; position: static; transform: none;
+                         margin: 15px 0 35px;
+                        }
+.contents li .txt_box > a{
+      display: inline-block;
+      padding: 10px 40px;
+      background-color: #00745E;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 2rem;
+      }
+.contents li .txt_box > a:hover{
+      background-color: #d3d2d2;
+      color: #00745E;
+      font-weight: 700;
+      }
+
+.contents li .img_box{width: 500px; height: 350px; 
+                      position: absolute; top: 0; left: auto; right: 0;
+                      opacity: 1;
+                      transition: all 0.5s;
+                     }
+.contents li .img_box a .img{width: 500px; height: 350px; 
+                            }
+
+.contents li .img_box a .dark{width: 500px; height: 350px; 
+                              background-color: #222;
+                              position: absolute; top: 0; left: 0;
+                              font-size: 3.2rem; color: #fff;
+                              text-align: center; line-height: 350px;
+                              opacity: 0;
+                              display: block; 
+                             }
+.contents li .img_box:hover a .dark{opacity: 0.8;}
+
+}
